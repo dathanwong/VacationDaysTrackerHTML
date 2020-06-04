@@ -1,0 +1,47 @@
+/* 
+Color Scheme
+red: f6511d
+yellow: ffb400
+blue: 00a6ed
+green: 7fb800
+gray: 0d2c54
+*/
+
+
+.day, .weekday{
+    min-width: 110px;
+    border: 1px solid black;
+}
+
+.day{
+    min-height: 100px;
+    
+}
+
+.btn-info{
+    background-color: #0d2c54;
+}
+
+.balance, .increase, .decrease, .eventIcon{
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.balance{
+    background-color: #00a6ed;
+}
+
+.increase{
+    background-color:#7fb800;
+    
+}
+
+.decrease{
+    background-color: #f6511d;
+}
+
+.eventIcon{
+    background-color: #0d2c54;
+}

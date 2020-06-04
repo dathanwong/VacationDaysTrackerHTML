@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vacation Tracker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+      
+    <div class="container p3">
+
+        <!-- Header -->
+        <div class="row">
+            <div class="col px-5 py-3">
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-info" id="previousMonth">PREV</button>
+                    <div>
+                        <h1 class="month d-inline-block">January</h1><h1 class="year d-inline-block">2020</h1>
+                    </div>
+                    <button class="btn btn-info" id="nextMonth">NEXT</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calendar -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Sunday</th>
+                    <th scope="col">Monday</th>
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">Wednesday</th>
+                    <th scope="col">Thursday</th>
+                    <th scope="col">Friday</th>
+                    <th scope="col">Saturday</th>
+                </tr>
+            </thead>
+            <tbody id="calendar"></tbody>
+        </table>
+        <!-- Event Entry Area  -->
+        <form action="">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <label for="eventName">Event Name</label>
+                    <input id="eventName" type="text" name="eventName" required>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <label for="eventStart">Event Start</label>
+                    <input id="eventStart" type="datetime-local" name="eventStart" required>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <label for="eventEnd">Event End</label>
+                    <input id="eventEnd" type="datetime-local" name="eventEnd" required>
+                </div>
+            </div>
+            <div class="row my-2 justify-content-center">
+                <button id="addEvent" type="button" class="col-3 btn btn-info">Add Event</button>
+            </div>
+        </form>
+        <!-- Event list -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Event Name</th>
+                    <th scope="col">Start Time</th>
+                    <th scope="col">End Time</th>
+                </tr>
+            </thead>
+            <tbody id="events">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    </body>
+</html>
